@@ -16,7 +16,7 @@ func (e *Echotgo) HandleRequest(ctx *actor.Context, req httpserver.HttpRequest) 
 	r := httpserver.HttpResponse{
 		StatusCode: 200,
 		Header:     make(httpserver.HeaderMap, 0),
-		Body:       []byte("hello wooorld"),
+		Body:       []byte("hello world"),
 	}
 	return &r, nil
 }
