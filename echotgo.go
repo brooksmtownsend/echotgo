@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/wasmcloud/actor-tinygo"
-	"github.com/wasmcloud/interfaces/httpserver/tinygo"
+	httpserver "github.com/wasmcloud/interfaces/httpserver/tinygo"
 )
 
 func main() {
@@ -16,7 +16,7 @@ func (e *Echotgo) HandleRequest(ctx *actor.Context, req httpserver.HttpRequest) 
 	r := httpserver.HttpResponse{
 		StatusCode: 200,
 		Header:     make(httpserver.HeaderMap, 0),
-		Body:       []byte("hello"),
+		Body:       []byte("hello wooorld"),
 	}
 	return &r, nil
 }
